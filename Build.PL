@@ -17,6 +17,12 @@ my $b = AudioFile::Info::Build->new(module_name => $module,
                                     dynamic_config => 1,
                                    );
 
-$b->notes(package => $module);
-
 $b->create_build_script;
+$b->notes(package => $module);
+$b->notes(config  => {
+                      read_mp3 => 1,
+                      write_mp3 => 0,
+                      read_ogg => 0,
+                      write_ogg => 0,
+                      pure_perl => 0
+                     });
