@@ -14,7 +14,6 @@ my $b = AudioFile::Info::Build->new(module_name => $module,
                                                  Module::Build   => 0
                                                 },
                                     create_makefile_pl => 'passthrough',
-                                    dynamic_config => 1,
                                    );
 
 $b->create_build_script;
@@ -23,6 +22,6 @@ $b->notes(config  => {
                       read_mp3 => 0,
                       write_mp3 => 0,
                       read_ogg => 1,
-                      write_ogg => 0,
+                      write_ogg => 1,
                       pure_perl => 0
                      });

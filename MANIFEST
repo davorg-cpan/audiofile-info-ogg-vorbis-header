@@ -6,5 +6,6 @@ META.yml
 README
 lib/AudioFile/Info/Build.pm
 lib/AudioFile/Info/Ogg/Vorbis/Header.pm
-t/1.t
+t/1_read.t
+t/2_write.t
 t/test.ogg
