@@ -40,7 +40,6 @@ sub AUTOLOAD {
   return ($_[0]->{obj}->comment($data{$sub}))[0];
 }
 
-
 1;
 __END__
 
