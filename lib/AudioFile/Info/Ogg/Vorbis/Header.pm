@@ -38,7 +38,7 @@ sub AUTOLOAD {
   croak "Invalid attribute '$sub'" unless $data{$sub};
 
   if ($_[1]) {
-    if (grep { $data{$sub} } $_[0]->{obj}->comment_tags) {
+    if (grep { $_ eq $data{$sub} } $_[0]->{obj}->comment_tags) {
       $_[0]->{obj}->edit_comment($data{$sub}, $_[1]);
     } else {
       $_[0]->{obj}->add_comments($data{$sub}, $_[1]);
