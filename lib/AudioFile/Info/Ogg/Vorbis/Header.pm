@@ -46,11 +46,15 @@ __END__
 
 =head1 NAME
 
-AudioFile::Info::Ogg - Perl extension to get info from Ogg Vorbis files.
+AudioFile::Info::Ogg::Vorbis::Header - Perl extension to get info from
+Ogg Vorbis files.
 
 =head1 DESCRIPTION
 
-  See L<AudioFile::Info>
+Extracts data from an Ogg Vorbis file using the CPAN module
+Ogg::Vorbis::Header.
+
+See L<AudioFile::Info> for more details.
 
 =head1 AUTHOR
 
