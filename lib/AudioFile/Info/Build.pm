@@ -28,14 +28,7 @@ sub ACTION_install {
     $config = LoadFile($path);
   }
 
-  $config->{$pkg} =
-    {
-     read_mp3 => 1,
-     write_mp3 => 0,
-     read_ogg => 0,
-     write_ogg => 0,
-     pure_perl => 0
-    };
+  $config->{$pkg} = $self->notes('config');
 
   # calculate "usefulness" score
 
