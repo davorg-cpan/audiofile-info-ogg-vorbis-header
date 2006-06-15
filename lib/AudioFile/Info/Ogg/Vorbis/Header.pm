@@ -70,6 +70,13 @@ sub AUTOLOAD {
 1;
 __END__
 
+=head1 METHODS
+
+=head2 new
+
+Creates a new object of class AudioFile::Info::Ogg::Vorbis::Header. Usually
+called by AudioFile::Info::new.
+
 =head1 AUTHOR
 
 Dave Cross, E<lt>dave@dave.org.ukE<gt>
