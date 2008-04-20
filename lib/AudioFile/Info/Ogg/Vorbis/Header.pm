@@ -29,7 +29,7 @@ use Ogg::Vorbis::Header;
 require Inline;
 Inline->init;
 
-our $VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d", '$Revision$ ' =~ /(\d+)/;
 
 my %data = (artist => 'artist',
             title  => 'title',

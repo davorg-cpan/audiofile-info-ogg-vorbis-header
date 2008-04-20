@@ -3,6 +3,8 @@ package AudioFile::Info::Build;
 use strict;
 use warnings;
 
+our $VERSION = sprintf "%d", '$Revision$ ' =~ /(\d+)/;
+
 use base 'Module::Build';
 
 use YAML qw(LoadFile DumpFile);
