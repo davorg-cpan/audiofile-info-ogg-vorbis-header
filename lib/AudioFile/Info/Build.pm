@@ -3,7 +3,7 @@ package AudioFile::Info::Build;
 use strict;
 use warnings;
 
-our $VERSION = sprintf "%d", '$Revision$ ' =~ /(\d+)/;
+our $VERSION = 1.08;
 
 use base 'Module::Build';
 

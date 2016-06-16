@@ -29,14 +29,14 @@ use Ogg::Vorbis::Header;
 require Inline;
 Inline->init;
 
-our $VERSION = sprintf "%d", '$Revision$ ' =~ /(\d+)/;
+our $VERSION = 1.08;
 
-my %data = (artist => 'artist',
-            title  => 'title',
-            album  => 'album',
-            track  => 'tracknumber',
-            year   => 'date',
-            genre  => 'genre');
+my %data = (artist => 'ARTIST',
+            title  => 'TITLE',
+            album  => 'ALBUM',
+            track  => 'TRACKNUMBER',
+            year   => 'DATE',
+            genre  => 'GENRE');
 
 sub new {
   my $class = shift;
