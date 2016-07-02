@@ -10,7 +10,7 @@ my $b = AudioFile::Info::Build->new(
     requires => {
         perl                  => '5.6.0',
         'AudioFile::Info'     => 0,
-        'Ogg::Vorbis::Header' => 0,
+        'Ogg::Vorbis::Header' => '0.04',
     },
     build_requires => {
         'Module::Build' => 0,
