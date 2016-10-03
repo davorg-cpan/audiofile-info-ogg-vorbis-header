@@ -25,7 +25,7 @@ isa_ok($song, 'AudioFile::Info::Ogg::Vorbis::Header');
 is($song->title, 'test');
 is($song->artist, 'davorg');
 is($song->album, 'none');
-is($song->track, '0');
+is($song->track, '00');
 is($song->year, '2003');
 is($song->genre, 'nonsense');
 $song->genre('xxx');
