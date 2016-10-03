@@ -9,7 +9,7 @@ perl:
 
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -y libogg0 libvorbis0a libogg-dev libvorbis-dev
+  - sudo apt-get install -y libogg0 libvorbis0a libogg-dev libvorbis-dev libssl-dev
   - cpanm -n Devel::Cover::Report::Coveralls
 
 script:
