@@ -5,10 +5,8 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test;
-BEGIN { plan tests => 8 };
+use Test::More;
 use AudioFile::Info;
-ok(1);
 
 #########################
 
@@ -17,10 +15,12 @@ ok(1);
 
 my $song = AudioFile::Info->new('t/test.ogg', 
                             { ogg => 'AudioFile::Info::Ogg::Vorbis::Header' });
-ok(ref $song eq 'AudioFile::Info::Ogg::Vorbis::Header');
-ok($song->title eq 'test');
-ok($song->artist eq 'davorg');
-ok($song->album eq 'none');
-ok($song->track eq '00');
-ok($song->year eq '2003');
-ok($song->genre eq 'nonsense');
+isa_ok($song, 'AudioFile::Info::Ogg::Vorbis::Header');
+is($song->title, 'test');
+is($song->artist, 'davorg');
+is($song->album, 'none');
+is($song->track, '00');
+is($song->year, '2003');
+is($song->genre, 'nonsense');
+
+done_testing();
