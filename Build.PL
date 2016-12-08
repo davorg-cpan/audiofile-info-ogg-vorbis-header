@@ -5,7 +5,6 @@ my $module = 'AudioFile::Info::Ogg::Vorbis::Header';
 
 my $b = AudioFile::Info::Build->new(
     module_name => $module,
-    dist_version => '1.08',
     license => 'perl',
     requires => {
         perl                  => '5.6.0',
@@ -17,6 +16,16 @@ my $b = AudioFile::Info::Build->new(
         YAML            => 0,
     },
     create_makefile_pl => 'traditional',
+    meta_merge => {
+        'meta-spec' => { version => 2 },
+        resources  => {
+            repository => {
+                type => 'git',
+                url  => 'https://github.com/davorg/audiofile-info-ogg-vorbis-header.git',
+                web  => 'https://github.com/davorg/audiofile-info-ogg-vorbis-header',
+            },
+        },
+    },
 );
 
 $b->create_build_script;
