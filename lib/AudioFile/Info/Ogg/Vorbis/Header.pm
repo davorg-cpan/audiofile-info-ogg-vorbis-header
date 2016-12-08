@@ -1,6 +1,3 @@
-#
-# $Id$
-#
 
 =head1 NAME
 
@@ -29,7 +26,7 @@ use Ogg::Vorbis::Header;
 require Inline;
 Inline->init;
 
-our $VERSION = 1.08;
+our $VERSION = '1.8.1';
 
 my %data = (artist => 'ARTIST',
             title  => 'TITLE',

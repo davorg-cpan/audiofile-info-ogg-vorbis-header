@@ -3,8 +3,6 @@ package AudioFile::Info::Build;
 use strict;
 use warnings;
 
-our $VERSION = 1.08;
-
 use base 'Module::Build';
 
 use YAML qw(LoadFile DumpFile);
