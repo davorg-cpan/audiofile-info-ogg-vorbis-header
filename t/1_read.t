@@ -16,7 +16,7 @@ use AudioFile::Info;
 # Insert your test code below, the Test::More module is use()ed here so read
 # its man page ( perldoc Test::More ) for help writing this test script.
 
-my $song = AudioFile::Info->new('t/test.ogg', 
+my $song = AudioFile::Info->new('t/test.ogg',
                             { ogg => 'AudioFile::Info::Ogg::Vorbis::Header' });
 isa_ok($song, 'AudioFile::Info::Ogg::Vorbis::Header');
 is($song->title, 'test');
