@@ -27,7 +27,7 @@ jobs:
         with:
           perl-version: ${{ matrix.perl }}
       - run: sudo apt-get update -qq
-      - run: sudo apt-get install -y gcc libogg0 libvorbis0a libogg-dev libvorbis-dev libssl-dev
+      - run: sudo apt-get install -y gcc make libogg0 libvorbis0a libogg-dev libvorbis-dev libssl-dev
       - run: perl -V
       - run: cpanm --installdeps .
       - run: prove -lv t
