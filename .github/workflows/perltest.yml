@@ -30,5 +30,10 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y gcc make libogg0 libvorbis0a libogg-dev libvorbis-dev libssl-dev
       - name: Install CPAN modules
         run: cpanm --installdeps .
+      - name: Archive CPAN logs
+        uses: actions/upload-artifact@v2
+        with:
+          name: cpan_log
+          path: /home/runner/.cpanm/work/*/build.log
       - name: Run tests
         run: prove -lv t
