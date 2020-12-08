@@ -27,8 +27,7 @@ jobs:
         with:
           perl-version: ${{ matrix.perl }}
       - name: Install libraries
-        run: sudo apt-get update -qq
-        run: sudo apt-get install -y gcc make libogg0 libvorbis0a libogg-dev libvorbis-dev libssl-dev
+        run: sudo apt-get update -qq && sudo apt-get install -y gcc make libogg0 libvorbis0a libogg-dev libvorbis-dev libssl-dev
       - name: Install CPAN modules
         run: cpanm --installdeps .
       - name: Run tests
