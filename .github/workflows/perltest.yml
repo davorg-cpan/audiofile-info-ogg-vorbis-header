@@ -37,4 +37,4 @@ jobs:
           name: cpan_log
           path: /home/runner/.cpanm/work/*/build.log
       - name: Run tests
-        run: prove -lv t
+        run: PATH=/usr/bin/ prove -lv t
