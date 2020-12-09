@@ -24,6 +24,9 @@ my $b = AudioFile::Info::Build->new(
                 url  => 'https://github.com/davorg/audiofile-info-ogg-vorbis-header.git',
                 web  => 'https://github.com/davorg/audiofile-info-ogg-vorbis-header',
             },
+            bugtracker => {
+                web  => 'https://github.com/davorg/audiofile-info-ogg-vorbis-header/issues',
+            },
         },
     },
 );
