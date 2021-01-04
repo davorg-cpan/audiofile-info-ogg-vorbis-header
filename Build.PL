@@ -11,7 +11,7 @@ my $b = AudioFile::Info::Build->new(
         'AudioFile::Info'     => 0,
         'Ogg::Vorbis::Header' => '0.04',
     },
-    build_requires => {
+    configure_requires => {
         'Module::Build' => 0,
         YAML            => 0,
     },
