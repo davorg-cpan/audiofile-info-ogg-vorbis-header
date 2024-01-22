@@ -44,8 +44,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Set up perl
         uses: shogo82148/actions-setup-perl@v1
-        with:
-          perl-version: 'latest'
       - name: Install libraries
         run: sudo apt-get update -qq && sudo apt-get install -y gcc make libogg0 libvorbis0a libogg-dev libvorbis-dev libssl-dev
       - name: Install CPAN modules
