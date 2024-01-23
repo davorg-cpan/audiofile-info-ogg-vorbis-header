@@ -21,11 +21,11 @@ my $b = AudioFile::Info::Build->new(
         resources  => {
             repository => {
                 type => 'git',
-                url  => 'https://github.com/davorg/audiofile-info-ogg-vorbis-header.git',
-                web  => 'https://github.com/davorg/audiofile-info-ogg-vorbis-header',
+                url  => 'https://github.com/davorg-cpan/audiofile-info-ogg-vorbis-header.git',
+                web  => 'https://github.com/davorg-cpan/audiofile-info-ogg-vorbis-header',
             },
             bugtracker => {
-                web  => 'https://github.com/davorg/audiofile-info-ogg-vorbis-header/issues',
+                web  => 'https://github.com/davorg-cpan/audiofile-info-ogg-vorbis-header/issues',
             },
         },
     },
